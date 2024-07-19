@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 of Internship</title>
+    <link rel="stylesheet" href="intern.css">
+</head>
+<body>
+    <h1>Task#01 of Internship at <a href="https://www.codealpha.tech/internship.html">CodeAlpha</a></h1>
+    <h1>Age Calculator</h1>
+    <div class="container">
+        <form id="age-form">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" required>
+            <label for="at-date">Age at This Date:</label>
+            <input type="date" name="at-date" id="at-date" value="<?php echo date('Y-m-d'); ?>">
+            <button type="submit">Calculate Age</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="intern.js"></script>
+</body>
+</html>
